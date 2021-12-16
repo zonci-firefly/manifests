@@ -17,8 +17,6 @@
     <linkfile dest="yocto/meta-poky" src="meta-poky"/>
     <linkfile dest="yocto/.templateconf" src=".templateconf"/>
     <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
-    <linkfile dest="yocto/README.md" src="../../.repo/manifests/README_yocto.md"/>
-    <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
   </project>
 
   <extend-project dest-branch="firefly" name="yocto/build/conf" path="yocto/build/conf" revision="6c6c341b8044bac6d521701170c8540d625e3109" remote="firefly-yocto"/>
