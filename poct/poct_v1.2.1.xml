@@ -31,7 +31,6 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project name="buildroot-dl" path="buildroot/dl" revision="8005ad90b0097892a7a6f0aa6f7cd02049e24b6b" upstream="poct" remote="anly8888"/>
-  <project name="debian" revision="9e468434891b5dfcbe37d169b94cf537c9c2715b" upstream="rk356x/firefly"/>
   <project name="device/rockchip" revision="271971b4b4456a0478c9876d5633e906318857bf" upstream="firefly">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
@@ -103,10 +102,4 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project name="u-boot" revision="5961c0c398a4208da5bf4704d4fb081c6563a756" upstream="rk356x/firefly"/>
-
-  <!--yocto project-->
-  <project name="yocto/build/conf" path="yocto/build/conf">
-	  <linkfile dest="yocto/build/conf/local.conf" src="rk3399/firefly-rk3399.conf"/>
-  </project>
-  <include name="yocto.xml" />
 </manifest>
