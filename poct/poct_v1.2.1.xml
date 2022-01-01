@@ -26,7 +26,7 @@
   <project name="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="firefly"/>
   <project name="app/rkaiq_tool_server" revision="1e61f9d7fecfb9b17abae680f92a940475331720" upstream="firefly"/>
   <project name="app/storage_manager" revision="213aded5fbf9dc2fd05c0fd529aa3da55a6fea93" upstream="firefly"/>
-  <project name="buildroot" revision="0e18fed7626e6d3b247d7db88744b9f4cd9ae409" upstream="poct" remote="anly8888">
+  <project name="buildroot" revision="bce1a7109f28c5f391fde9e0178b3a38616bd0bf" upstream="poct" remote="anly8888">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
