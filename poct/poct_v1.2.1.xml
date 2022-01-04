@@ -26,12 +26,12 @@
   <project name="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="firefly"/>
   <project name="app/rkaiq_tool_server" revision="1e61f9d7fecfb9b17abae680f92a940475331720" upstream="firefly"/>
   <project name="app/storage_manager" revision="213aded5fbf9dc2fd05c0fd529aa3da55a6fea93" upstream="firefly"/>
-  <project name="buildroot" revision="bce1a7109f28c5f391fde9e0178b3a38616bd0bf" upstream="poct" remote="anly8888">
+  <project name="buildroot" revision="c0e343717aa5fbdd9df7baa5cbc267b7bdb59ebd" upstream="poct" remote="anly8888">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project name="buildroot-dl" path="buildroot/dl" revision="8005ad90b0097892a7a6f0aa6f7cd02049e24b6b" upstream="poct" remote="anly8888"/>
-  <project name="device/rockchip" revision="271971b4b4456a0478c9876d5633e906318857bf" upstream="firefly">
+  <project name="buildroot-dl" path="buildroot/dl" revision="b94fd896f10896bf8d96a71a5e22c70c3ecd28b9" upstream="poct" remote="anly8888"/>
+  <project name="rockchip" path="device/rockchip" revision="7842492ef2002d42bffc71434a81919730680dd3" upstream="poct" remote="anly8888">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
