@@ -31,7 +31,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project name="buildroot-dl" path="buildroot/dl" revision="b94fd896f10896bf8d96a71a5e22c70c3ecd28b9" upstream="poct" remote="anly8888"/>
-  <project name="rockchip" path="device/rockchip" revision="7842492ef2002d42bffc71434a81919730680dd3" upstream="poct" remote="anly8888">
+  <project name="rockchip" path="device/rockchip" revision="96bd025c113ef9b0849e7a1bc471bd50bf228a56" upstream="poct" remote="anly8888">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -94,7 +94,7 @@
   <project name="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="firefly"/>
   <project name="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="firefly"/>
   <project name="rkbin" revision="12816083b6303f852fc3604b2e5b0d51d1a51dd8" upstream="firefly"/>
-  <project name="tools" revision="3625ca56cf9217dc1b1b863546d9fb8868831a3a" upstream="firefly">
+  <project name="tools" revision="04e938e7c544805fa857bfd618a4fe7a6e1548cd" upstream="poct" remote="anly8888">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
