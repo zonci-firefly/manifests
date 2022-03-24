@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <include name="include/zonci_gitlab.xml" />
+    <include name="rk3308/rk3308_linux_release_20220304_v1.5.0a.xml" />
+    <extend-project name="tools"           remote="zonci-firefly" />
+    <extend-project name="buildroot"       remote="zonci-firefly" />
+    <extend-project name="device/rockchip" remote="zonci-firefly" />
+    <extend-project name="kernel"          remote="zonci-firefly" />
+</manifest>
