@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <include name="include/zonci_gitlab.xml" />
-    <include name="rk3308/rk3308_linux_release_20220304_v1.5.0a.xml" />
+    <include name="rk3308/rk3308_linux_bsp_release_20220304_v1.5.0a.xml" />
+
+    <project name="buildroot" remote="zonci-firefly">
+        <linkfile dest="Makefile" src="build/Makefile"/>
+        <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+    </project>
+    <project name="buildroot-dl" path="buildroot/dl"/>
+    <project name="external/bluetooth_bsa"/>
+    <project name="external/bluez-alsa"/>
+    <project name="external/broadcom_bsa"/>
+    <project name="external/cae_vad"/>
+    <project name="external/recovery" />
+    <project name="external/rk_hw_vad" />
+    <project name="external/rk_pcba_test" />
+    <project name="external/rkscript" />
+    <project name="external/rkupdate" />
+    <project name="external/security/bin" />
+    <project name="external/security/rk_tee_user" />
+    <project name="external/update_engine" />
+
     <extend-project name="tools"           remote="zonci-firefly" />
-    <extend-project name="buildroot"       remote="zonci-firefly" />
     <extend-project name="device/rockchip" remote="zonci-firefly" />
     <extend-project name="kernel"          remote="zonci-firefly" />
 </manifest>
