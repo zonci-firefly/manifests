@@ -3,11 +3,11 @@
     <include name="include/zonci_gitlab.xml" />
     <include name="rk3308/rk3308_linux_bsp_release_20220304_v1.5.0a.xml" />
 
-    <project name="buildroot" remote="zonci-firefly">
+    <project name="buildroot" remote="zonci-firefly" revision="refs/heads/nxtask/next">
         <linkfile dest="Makefile" src="build/Makefile"/>
         <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
     </project>
-    <project name="buildroot-dl" path="buildroot/dl"/>
+    <project name="buildroot-dl" path="buildroot/dl" revision="refs/heads/nxtask/next"/>
 
     <project name="external/bluetooth_bsa"          revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
     <project name="external/bluez-alsa"             revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
@@ -25,7 +25,7 @@
     <project name="external/security/rk_tee_user"   revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
     <project name="external/update_engine"          revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
 
-    <extend-project name="tools"           remote="zonci-firefly" />
-    <extend-project name="device/rockchip" remote="zonci-firefly" />
-    <extend-project name="kernel"          remote="zonci-firefly" />
+    <extend-project name="tools"           remote="zonci-firefly" revision="refs/heads/nxtask/next"/>
+    <extend-project name="device/rockchip" remote="zonci-firefly" revision="refs/heads/nxtask/next"/>
+    <extend-project name="kernel"          remote="zonci-firefly" revision="refs/heads/nxtask/next"/>
 </manifest>
