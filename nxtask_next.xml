@@ -7,7 +7,7 @@
         <linkfile dest="Makefile" src="build/Makefile"/>
         <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
     </project>
-    <project name="buildroot-dl" path="buildroot/dl" revision="refs/heads/nxtask/next"/>
+    <project name="buildroot-dl" path="buildroot/dl" remote="zonci-firefly" revision="refs/heads/nxtask/next"/>
 
     <project name="external/bluetooth_bsa"          revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
     <project name="external/bluez-alsa"             revision="refs/tags/rk356x/linux_release_v1.2.3a"/>
