@@ -3,8 +3,8 @@
     <include name="include/zonci_gitlab.xml" />
     <include name="rk356x/rk356x_linux_bsp_release_20220311_v1.2.3a.xml"/>
 
-    <project name="buildroot-dl" path="buildroot/dl" remote="zonci-firefly" revision="refs/heads/poct/next"/>
-    <project name="buildroot"                        remote="zonci-firefly" revision="refs/heads/poct/next">
+    <project name="buildroot-dl" path="buildroot/dl" remote="zonci-firefly" revision="refs/tags/poct/v1.1"/>
+    <project name="buildroot"                        remote="zonci-firefly" revision="refs/tags/poct/v1.1">
         <linkfile dest="Makefile" src="build/Makefile"/>
         <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
     </project>
@@ -59,7 +59,7 @@
     <project name="external/uvc_app"/>
     <project name="external/wifiAutoSetup"/>
 
-    <extend-project name="device/rockchip" remote="zonci-firefly" revision="refs/heads/poct/next"/>
-    <extend-project name="kernel"          remote="zonci-firefly" revision="refs/heads/poct/next"/>
-    <extend-project name="tools"           remote="zonci-firefly" revision="refs/heads/poct/next"/>
+    <extend-project name="device/rockchip" remote="zonci-firefly" revision="refs/tags/poct/v1.1"/>
+    <extend-project name="kernel"          remote="zonci-firefly" revision="refs/tags/poct/v1.1"/>
+    <extend-project name="tools"           remote="zonci-firefly" revision="refs/tags/poct/v1.1"/>
 </manifest>
