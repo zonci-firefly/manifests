@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="rk356x_linux_bsp_next.xml"/>
- 
+  <include name="rk356x/rk356x_linux_bsp_release_20220726_v1.3.0a.xml"/>
+
   <project name="app/QLauncher"/>
   <project name="app/aiserver"/>
   <project name="app/eptz_demo"/>
