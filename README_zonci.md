@@ -29,3 +29,47 @@ repo sync -c --no-tags
 repo init -b zonci -b nxtask_v1.0.xml
 repo sync -c --no-tags
 ```
+
+## 编译poct
+
+poct 默认源代码目录为``~/projects/nx/poct/px``.
+如果是其它目录, 需要更改buildroot配置文件.
+
+```
+./build.sh poct-mipi-buildroot.mk
+./build.sh
+```
+
+## 配置Buildroot
+
+### 建立buildroot编译环境
+
+通过poct-mipi-buildroot.mk文件我们了解到,
+buildroot使用的配置文件为rockchip_rk3566.
+```
+# Buildroot config
+export RK_CFG_BUILDROOT=rockchip_rk3566
+```
+
+在bash下, 我们也可以通过
+```
+source device/rockchip/.BoardConfig.mk
+echo $RK_CFG_BUILDROOT
+```
+来显示buildroot配置文件.
+
+```
+source envsetup.sh rockchip_rk3566
+```
+
+### 配置
+
+```
+cd buildroot
+
+# 显示配置菜单
+make menuconfig
+
+# 保存默认配置
+make savedefconfig
+```
